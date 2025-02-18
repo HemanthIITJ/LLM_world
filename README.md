@@ -256,6 +256,7 @@
              -   Determines the location (London, and the specific location within London from the image).
              -   Queries an external weather API.
          5.  **Output Generation:** The LLM component generates a response: "The weather in London at [specific location from image] is currently [weather conditions from API]."
+    ![](./assets/images/UnifiedFramework.svg)
 
 - **5.2 Applying Techniques Across Merged Models**
     - **5.2.1. Concept (Objective)**. Same as in sections 2.2.
@@ -267,6 +268,7 @@
     - **Fine-Tuning (Merged Models):** Fine-tuning can be performed on the entire system or on specific modules, depending on the task. End-to-end fine-tuning is often desirable but can be computationally expensive.
     - **Pre-training (Merged Models):**  Pre-training can be used to initialize the weights of the different modules before they are integrated. For a new merged model, staged pre-training could be considered (first pre-train individual components, then pre-train the fused representation).
     - **LoRA & PEFT (Merged Models):**  These techniques are particularly valuable for large merged models, as they allow for efficient adaptation to new tasks without updating all parameters. They can be applied to individual modules or across multiple modules.
+    ![](./assets/images/MergedModelTechniques.svg)
 
 #### Chapter 6: Pathways to Advanced AI Systems
 
@@ -285,6 +287,7 @@
         -   **Robustness and Safety:**  Ensuring that AGI systems are robust to unexpected inputs and do not exhibit unintended or harmful behavior.
           -   **Model-based learning:** The core of AGI will likely be formed around model-based learning (building and maintaining an internal world model) as opposed to model-free learning (trial-and-error).
     -   **6.1.4 Conclusion (Technical Pros, Cons, Research):**  AGI remains a long-term research goal with significant challenges.  Progress in areas like continual learning, common sense reasoning, and causal inference is crucial for achieving AGI.
+    ![](./assets/images/AGI.svg)
 
 -   **6.2 Steps Toward Artificial Superintelligence (ASI)**
 
@@ -299,6 +302,7 @@
     **Alignment Problem:** The challenge of ensuring that ASI systems are aligned with human values and goals.  This is a critical research area in ASI safety.
     **6.2.4 Conclusion (Technical Pros, Cons, Research):**
         -   ASI is a highly speculative and controversial topic.  There is no consensus on whether or when ASI will be achieved, or what its consequences will be.  Research in this area focuses on understanding the potential risks and benefits of ASI, developing methods for ensuring ASI safety, and exploring the long-term implications of advanced AI. The focus of most current AI safety research concerns AGI, not ASI, as AGI is considered a more immediate concern. The development of ASI is predicated on the prior development of AGI.
+    ![](./assets/images/ASI.svg)
 -----
 
 #### Chapter 7: Evaluation and Benchmarking of LLMs, LRMs, MMLLMs, and MMLRMs
@@ -406,6 +410,7 @@
         -   **Formal Verification:**  Using mathematical techniques to prove that a system meets certain safety properties.  This is challenging for complex AI systems but can be applied to specific components or modules.
         -   **Containment:**  Limiting the model's capabilities and access to resources to prevent unintended harm.  This can involve sandboxing the model or restricting its ability to interact with the outside world.
         - **Tripwires:** automated systems that detect and potentially shut down AI systems under dangerous or unexpected behavior.
+    ![](./assets/images/path_ssi.svg)
 
 - **8.4 Ethical Considerations**
 
